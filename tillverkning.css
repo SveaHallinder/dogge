@@ -1,0 +1,53 @@
+.tillverkning h2{
+    color: darkslategray;
+    text-align: center;
+    font-size: 21px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.tillverkning img{
+    margin: auto;
+    text-align: center;
+    max-height: 600px;
+    max-width: 600px;
+}
+.tillverkning{
+    margin: auto;
+    max-width: 600px;
+}
+
+.teamet{
+    max-width: 950px;
+    margin: auto;
+    text-align: center;
+}
+.teamet img{
+    max-width: 450px;
+    margin: auto;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.teamet h1{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: auto;
+    color: darkslategray;
+}
+.alla{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+.alla img{
+    width: 300px;
+}
+.alla h2,p{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}

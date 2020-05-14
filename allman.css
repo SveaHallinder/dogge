@@ -1,0 +1,302 @@
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0px;
+    padding: 0px;
+}
+#huvudrubrik{
+    text-align: center;
+    display: block;
+    margin: 30px;
+    font-family: 'Playfair Display';
+}
+.cart{
+    position: fixed;
+    right: 75px;
+    background-color: white;
+    border: #FEFEFE;
+    float: right;
+}
+.cart img{
+    width: 40px;
+    height: 30px;
+    align-items: center;
+}
+#huvudrubrik a{
+    text-decoration: none;
+    color: darkgrey;
+    font-family: 'Playfair Display';
+    font-size: 45px;
+    margin: auto;
+}
+nav{
+    margin: auto;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    margin-bottom: 8vw;
+    display: flex;
+    text-align: center;
+    z-index: 10;
+}
+
+.flexbox{
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    position:absolute;
+    font-size: 20px;
+}
+
+.helflik{
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+}
+
+.helflik a{
+    display:run-in;
+    padding-bottom: 100%;
+    margin:0;
+}
+
+ul{
+    background: whitesmoke;
+    list-style-type: none;
+    padding: 15px;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    margin: auto;
+    width: auto;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+li a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+li a:hover {
+    color: lightgray;
+    transition: 0.3s;
+}
+
+ul li:hover ul{
+    display: inline-block;
+}
+
+ul li ul {
+    display: none;
+    position: absolute;   
+    background: whitesmoke;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: auto;
+    margin: 0;
+    top: 100%;
+    left: 25%;
+    right: auto;
+    padding: 10px;
+    font-family: inherit;
+}
+
+.helflik a:hover .helflik{
+    background-color: white;
+    display: block;
+}
+
+/* resterande sidor */
+
+footer {
+    background-color: black;
+    padding:30px;
+    color: white;
+    position: relative;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 200px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+footer, h2 {
+    margin: 0px;
+    color: silver;
+}
+
+footer a{
+    max-width: 100%;
+    margin: 70px;
+    color: aliceblue;
+    text-decoration: none;
+}
+.strlguide{
+    text-align: center;
+    margin: auto;
+    position:relative;
+}
+
+#logo{
+    height: 75px;
+    
+}
+
+* {box-sizing:border-box}
+
+@media only screen and (max-device-width: 500px) {
+    nav{
+        position: static;
+    }
+    .flexbox{
+        display:contents;
+        flex-direction: column;
+    }
+    ul li ul{
+        position: fixed;
+        display: block;
+    }
+    .helflik a{
+        padding: 0;
+    }
+    ul{
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    footer{
+        flex-direction: column;
+        position: static;
+        width: auto; 
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+        height: auto;
+    }
+    footer a{
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+    }
+    .cart{
+        position: static;
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: white;
+        border: #FEFEFE;
+        float: right;
+}
+    .cart img{
+        width: 30px;
+        height: 20px;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-device-width: 768px) { 
+     nav{
+        position: static;
+    }
+    .flexbox{
+        display:contents;
+        flex-direction: column;
+    }
+    .helflik{
+        position: relative;
+        display: block;
+    }
+    .helflik a{
+        padding: 0;
+    }
+    ul li ul{
+        display: none;
+        position: fixed;
+    }
+    li{
+        margin: 3px;
+    }
+    ul{
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    footer{
+        flex-direction: column;
+        position: static;
+        width: auto; 
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+        height: auto;
+    }
+    footer a{
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+    }
+    .cart{
+        position: static;
+        margin-top: 5px;
+        margin-left: 100px;
+        margin-right: 5px;
+        background-color: white;
+        border: #FEFEFE;
+        float: right;
+}
+    .cart img{
+        width: 30px;
+        height: 20px;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .flexbox{
+        position:absolute;
+        display: contents;
+        width: 100%;
+}
+    .helflik:after{
+        content: '⮛';
+    }
+    li{
+        white-space: nowrap;
+        padding: inherit;
+        margin: auto;
+        width: 100%;
+    }
+    ul{
+        flex-wrap:nowrap;
+        width:inherit;
+    }
+     
+    footer a{
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin: 20px;
+        width: 100%;
+    }
+    .cart{
+        position: static;
+        margin-right: 75px;
+        background-color: white;
+        border: #FEFEFE;
+        float: right;
+}
+    .cart img{
+        width: 40px;
+        height: 30px;
+        align-items: center;
+    }
+}
+
+
+.subrubrik{
+    font-size: 230%;
+    text-align: center;
+    color: dimgray;
+}

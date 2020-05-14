@@ -1,0 +1,111 @@
+.vaticano img{
+    height: 300px;
+    width: 300px;
+    transition: 0.2s;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.vaticano{
+    background-color: whitesmoke;
+    max-width: 909px;
+    max-height: 600px;
+    margin: auto;
+}
+.vaticano h1, p{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.venezia img{
+    height: 300px;
+    width: 300px;
+    transition: 0.2s;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.venezia{
+    margin-bottom: 50px;
+    background-color: whitesmoke;
+    max-width: 909px;
+    max-height: 600px;
+    margin: auto;
+}
+.venezia h1, p{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.roma img{
+    height: 300px;
+    width: 300px;
+    transition: 0.2s;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.roma{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    background-color: whitesmoke;
+    max-width: 909px;
+    max-height: 600px;
+    margin: auto;
+}
+.roma h1, p{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+}
+h4{
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-family: georgia;
+}
+.button {
+    border-radius: 4px;
+    background-color: lightgrey;
+    border: none;
+    color: darkslategrey;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 380px;
+}
+
+.button span {
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}

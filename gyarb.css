@@ -1,0 +1,103 @@
+/* Slideshow container */
+.slideshow-container {
+    max-width: 700px;
+    position: relative;
+    margin: auto;
+    
+}
+.container{
+    position: center;
+    width: 100%;
+    height: 100%;
+    
+}
+.mySlides {
+    width: 100%;
+    height: 500PX;
+    margin: auto;
+    padding: 20px;
+    object-fit: contain;
+  
+}
+.arrow {
+    width: 100%;
+    height: 0px;
+    max-width: 850px;
+    margin: auto;
+    padding: 0px 20px;
+    position:relative;
+    display:flex;
+    bottom: 250px;
+    justify-content: space-between;
+    position:relative;
+}
+.prev, .next {
+    cursor: pointer;
+    top: 50%;
+    margin-top: -22px;
+    padding: 16px;
+    color: gray;
+    font-weight: bold;
+    font-size: 27px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    color: whitesmoke;
+}
+.text {
+    color: white;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0px;
+    margin-left: 316px;
+}
+.numbertext {
+    color: white;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  
+}
+.dots {
+    text-align: center;
+    padding-bottom: 20px;
+    color: gray;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: gray;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+    text-align: center;
+    position:relative;
+}
+.active, .dot:hover {
+    background-color: lightgray;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
